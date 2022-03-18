@@ -1,0 +1,7 @@
+1. git log (find the commit number for add ReadMe.txt)
+
+2. git checkout "the commit number"
+
+3. git branch dev02
+
+4 add a file and commit and merge to master
