@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "DpEARJaW+RvchMxPHpNypWZSVwnvYBOLunuNVu2osfZDXXyPUtdHRxljXf2GyGvXYtg0CVThNnO5/BVAI6ILdg==",
+  "dgSpecHash": "FXZuKr8CPK9iWIxNsHioddWJF0oQt9E1ah+h5si107Hw/YNwqkgZZUkJn0B7LYvDl+Ha1ny5npp2ND/pOvhTdg==",
   "success": true,
   "projectFilePath": "C:\\Test\\GitTest\\HelloWorldConsole\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\dwongwc\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\dwongwc\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\dwongwc\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }
