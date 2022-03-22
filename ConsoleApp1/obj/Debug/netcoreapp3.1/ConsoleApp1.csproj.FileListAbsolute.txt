@@ -14,3 +14,4 @@ C:\Test\GitTest\HelloWorldConsole\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.
 C:\Test\GitTest\HelloWorldConsole\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.genruntimeconfig.cache
 C:\Test\GitTest\HelloWorldConsole\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Test\GitTest\HelloWorldConsole\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.csproj.CopyComplete
+C:\Test\GitTest\HelloWorldConsole\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
