@@ -4,6 +4,8 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ConsoleApp1
 {
@@ -11,6 +13,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            var a = System.IO.Path.GetExtension("sampleFile");
             Console.WriteLine("Hello World!");
 
             //AutoMapper Case 1: From A to B (all property are same) 
@@ -117,6 +120,27 @@ namespace ConsoleApp1
             var c02StrData = JsonConvert.DeserializeObject<C>(c02Str);
             Console.WriteLine(c02Str);
             //// Json Part End
+
+
+            ////Linq Part Start
+            List<Student> students = new List<Student>();
+            students.Add(new Student { ID = 1, Name = "Alex", Class = "A" });
+            students.Add(new Student { ID = 2, Name = "Alan", Class = "A" });
+            students.Add(new Student { ID = 3, Name = "Ace", Class = "A" });
+            students.Add(new Student { ID = 4, Name = "Bobo", Class = "B" });
+            students.Add(new Student { ID = 5, Name = "Ben", Class = "B" });
+            students.Add(new Student { ID = 6, Name = "Bob", Class = "B" });
+            students.Add(new Student { ID = 7, Name = "Cat", Class = "C" });
+            students.Add(new Student { ID = 8, Name = "CoCa", Class = "C" });
+            students.Add(new Student { ID = 9, Name = "Cic", Class = "C" });
+            students.Add(new Student { ID = 10, Name = "Denial", Class = "D" });
+
+            var target1 = students.Where(x => x.ID == 1).First();
+            var target2 = students.Where(x => x.Name == "Bobo").First().Name;
+            List<string> nameList = students.Select(x => x.Name).ToList();
+            var anonymous = students.Select(x => new { x.ID, x.Name }).ToList();
+            List<string> orderedNameList = students.Select(x => x.Name).OrderBy(x => x).ToList();
+            ////Linq Part End
         }
     }
 }
